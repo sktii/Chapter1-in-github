@@ -2,3 +2,4 @@
 master.txt      原始訊號
 slave.txt       調製的訊號
 myplot.png      訊號模擬出來的圖
+程式碼裡面可以修改編碼方式、duty cycle、sampling rate、訊號相位平移、訊號震幅大小等
