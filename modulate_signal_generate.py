@@ -68,13 +68,10 @@ SSIGNAL[insert_position:insert_position + S_signal_length] = S_signal
 #波型合成
 def combine_waves(wave_weights, sub_wave):
     combined_wave = []
-
     for weight in wave_weights:
         weighted_sub_wave = [value * weight for value in sub_wave]
         combined_wave.extend(weighted_sub_wave)
-
     return np.array(combined_wave)  # 將結果轉換為numpy數組
-
 print('phaseshift',len(phaseshift))
 Master_signal = combine_waves(Mcodeset,MSIGNAL)
 Slave_signal = combine_waves(Scodeset,SSIGNAL)
@@ -91,7 +88,6 @@ for i in range(length):
     if Master_signal[i] == 1:
         count += 1
         Master_signal[i] += count*Mastermodify
-
 
 #Slave_signal = np.insert(phaseshift, Sphase_shift_length, Slave_signal)
 # 保存數據到txt檔，每個元素佔據一列
