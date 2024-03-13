@@ -6,7 +6,6 @@ import os
 
 ##檔案儲存位置
 output_directory = r'C:\Users\ASUS\Desktop'  
-
 input_text = input("請輸入要轉換成ASCII的文字: ")
 # 將文字轉換為ASCII 2進制列表
 ascii_binary_list = []
